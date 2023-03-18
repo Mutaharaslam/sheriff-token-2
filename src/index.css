@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4, h5, h6, button, Link {
+    font-family: 'WideSaloon';
+  }
+  p, span {
+    font-family: 'Duality';
+  }
+}
+
+@font-face {
+  font-family: 'Duality';
+  src: local('Duality-Regular'),
+      url('assets/fonts/duality/Duality-Regular.woff2') format('woff2'),
+      url('assets/fonts/duality/Duality-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'WideSaloon';
+  src: local('WideSaloon'),
+      url('assets/fonts/widesaloon/WideSaloon.woff2') format('woff2'),
+      url('assets/fonts/widesaloon/WideSaloon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.main-bg{
+  position: relative;
+  z-index: 9;
+}
+
+.main-bg::after, .main-bg::before{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  content: "";
+  background-size: auto;
+  background-position: top;
+  width: 200px;
+  height: 100%;
+}
+@media screen and (max-width: 980px) {
+  .main-bg::after, .main-bg::before{
+    width: 150px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-bg::after, .main-bg::before{
+    display: none;
+  }
+}
+
+.main-bg::after{
+  right: 0;
+  background-image: url('../src/assets/imgs/left-edge.png');
+}
+
+.main-bg::before{
+  left: 0;
+  background-image: url('../src/assets/imgs/right-edge.png');
+}
+
+.bulletHole-holder{
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  right: 70px;
+  bottom: 70px;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+.bulletHole-holder .hole-img{
+  position: absolute;
+}
+
+
+.bulletHole-holder .hole-img:nth-child(1){
+  left: 10%;
+  top: 10%;
+}
+
+.bulletHole-holder .hole-img:nth-child(2){
+  left: 70%;
+  top: 80%;
+  rotate: 80deg;
+}
+
+.bulletHole-holder .hole-img:nth-child(3){
+  left: 90%;
+  top: 5%;
+  width: 70px;
+  rotate: 35deg;
+}
+
+.bulletHole-holder .hole-img:nth-child(4){
+  left: 10%;
+  top: 40%;
+  width: 90px;
+  rotate: 18deg;
+}
+
+.bulletHole-holder .hole-img:nth-child(5){
+  left: 55%;
+  top: 20%;
+  rotate: 25deg;
+}
+
+.bulletHole-holder .hole-img:nth-child(6){
+  left: 10%;
+  top: 85%;
+  width: 70px;
+  rotate: 40deg;
+}
+
+.navbar .navlink.active{
+  position: relative;
+  text-decoration: underline;
+}
+
+.navbar .navlink.active::after{
+  position: absolute;
+  content: '';
+  top: calc(100% + 2px);
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-image: url(./assets/imgs/star-min.png);
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar .navlink.active::after{
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
+.react-select-container{
+  width: 100%;
+  color: #fff;
+  /* height: 64px; */
+}
+
+.indicator{
+  padding: 0 !important;
+  background-color: transparent !important;
+}
