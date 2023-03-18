@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        homeBg: "url('/src/assets/imgs/bg-small-min.jpg')",
+        homeBg: "url('/src/assets/imgs/bg-min.jpg')",
         homeChart: "url('/src/assets/imgs/bg-min.jpg')",
         star: "url('/src/assets/imgs/a-min.png')",
+        bigStar: "url('/src/assets/imgs/star.png')",
         arrowBtnBg: "url('/src/assets/imgs/arrow-btn.png')",
         starFilled: "url('/src/assets/imgs/a-filled.png')",
       },
@@ -21,6 +22,7 @@ module.exports = {
     fontFamily: {
       sans: ['WideSaloon'],
       serif: ['Duality'],
+      cowBoys: ['Cowboys'],
     },
     screens: {
       xs: "400px",

@@ -1,13 +1,15 @@
 
 import valut from "../../assets/imgs/valut-min.png";
 import { BulletHeading } from "../../Components/bullet-heading/bullet-heading";
-import { BulletHole } from "../../Components/bullet-holes/bullet-holes";
 import { Container } from "../../Components/container/container";
 import { Nav } from "../../Components/nav/nav";
 import Select from "react-select";
 import { components } from "react-select";
 import { useState } from "react";
 import bulletDown from "../../assets/imgs/buulet-down.png"
+import { StarstHeading } from "../../Components/stars-heading/stars-heading";
+import { StarstDivider } from "../../Components/stars-divider/stars-divider";
+import { SocialNav } from "../../Components/social-nav/socialNav";
 
 export const BuyChart = () => {
   const options = [
@@ -80,25 +82,25 @@ export const BuyChart = () => {
   return (
     <Container>
       <Nav />
-      <BulletHole numbers={5} />
-      <div className="text-center md:mb-40 mb-24">
-        <h1 className=" lg:text-7xl md:text-5xl text-4xl text-primary uppercase">SHERIFF TOKEN</h1>
-        <h2 className=" lg:text-6xl md:text-4xl text-3xl text-primary uppercase">rewards dashboard</h2>
+      <div className="text-center md:mb-32 mb-24">
+        <h1 className=" lg:text-7xl md:text-5xl text-4xl text-primary uppercase font-cowBoys">SHERIFF TOKEN</h1>
+        <StarstHeading>rewards dashboard</StarstHeading>
+        {/* <h2 className=" lg:text-6xl md:text-4xl text-3xl text-primary uppercase font-cowBoys">rewards dashboard</h2> */}
       </div>
 
-      <div className="text-center mb-8">
-        <h2 className="lg:text-5xl md:text-3xl text-2xl text-primary uppercase">bounty vault</h2>
+      <div className="text-center mb-4">
+        <h2 className="lg:text-5xl md:text-3xl text-2xl text-primary uppercase font-cowBoys">bounty vault</h2>
       </div>
-      <div className="flex justify-center mb-16">
+      <div className="flex justify-center mb-8">
         <img className="w-80 mx-auto" src={valut} alt="" />
       </div>
 
-      <div className="text-center mb-40">
+      <div className="text-center mb-24">
         <p className=" text-3xl text-primary uppercase">(TOTAL VALUE HERE)</p>
         <p className=" text-lg text-primary uppercase">(PER PERSON SHARE HERE)</p>
       </div>
 
-      <div className="flex flex-col items-center  justify-center mb-16 lg:w-2/6 md:w-3/6 w-5/6 mx-auto">
+      <div className="flex flex-col items-center  justify-center mb-12 lg:w-2/6 md:w-3/6 w-5/6 mx-auto">
         <label className="mb-4 text-lg font-serif" htmlFor="">Enter Wallet Address Here</label>
         <Select
           defaultValue={selectedOption}
@@ -109,10 +111,9 @@ export const BuyChart = () => {
           className="react-select-container font-serif"
           styles={colourStyles}
         />
-
       </div>
 
-      <div className="grid lg:grid-cols-3 grid-cols-2 gap-4 xl:px-72 lg:px-56 md:px-36 sm:px-12 px-0 mx-auto font-serif mb-36 justify-items-center">
+      <div className="grid lg:grid-cols-3 grid-cols-2 gap-4 xl:px-72 lg:px-56 md:px-36 sm:px-12 px-0 mx-auto font-serif mb-24 justify-items-center">
         <div className=" bg-contain bg-center text-primary bg-star hover:bg-starFilled hover:text-white bg-no-repeat sm:h-48 sm:w-48 h-36 w-36 flex items-center justify-center">
           <h1 className="text-4xl  m-0 leading-6 font-serif">01</h1>
         </div>
@@ -135,6 +136,13 @@ export const BuyChart = () => {
 
       <div className="text-center mb-8">
         <BulletHeading>ADD TO WALLET</BulletHeading>
+      </div>
+
+      <div className="mb-12">
+        <StarstDivider />
+      </div>
+      <div className="">
+        <SocialNav />
       </div>
     </Container>
   );

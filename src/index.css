@@ -21,7 +21,6 @@
   font-display: swap;
 }
 
-
 @font-face {
   font-family: 'WideSaloon';
   src: local('WideSaloon'),
@@ -32,94 +31,13 @@
   font-display: swap;
 }
 
-
-.main-bg{
-  position: relative;
-  z-index: 9;
-}
-
-.main-bg::after, .main-bg::before{
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  z-index: -1;
-  content: "";
-  background-size: auto;
-  background-position: top;
-  width: 200px;
-  height: 100%;
-}
-@media screen and (max-width: 980px) {
-  .main-bg::after, .main-bg::before{
-    width: 150px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .main-bg::after, .main-bg::before{
-    display: none;
-  }
-}
-
-.main-bg::after{
-  right: 0;
-  background-image: url('../src/assets/imgs/left-edge.png');
-}
-
-.main-bg::before{
-  left: 0;
-  background-image: url('../src/assets/imgs/right-edge.png');
-}
-
-.bulletHole-holder{
-  position: absolute;
-  top: 70px;
-  left: 70px;
-  right: 70px;
-  bottom: 70px;
-  mix-blend-mode: multiply;
-  z-index: -1;
-}
-.bulletHole-holder .hole-img{
-  position: absolute;
-}
-
-
-.bulletHole-holder .hole-img:nth-child(1){
-  left: 10%;
-  top: 10%;
-}
-
-.bulletHole-holder .hole-img:nth-child(2){
-  left: 70%;
-  top: 80%;
-  rotate: 80deg;
-}
-
-.bulletHole-holder .hole-img:nth-child(3){
-  left: 90%;
-  top: 5%;
-  width: 70px;
-  rotate: 35deg;
-}
-
-.bulletHole-holder .hole-img:nth-child(4){
-  left: 10%;
-  top: 40%;
-  width: 90px;
-  rotate: 18deg;
-}
-
-.bulletHole-holder .hole-img:nth-child(5){
-  left: 55%;
-  top: 20%;
-  rotate: 25deg;
-}
-
-.bulletHole-holder .hole-img:nth-child(6){
-  left: 10%;
-  top: 85%;
-  width: 70px;
-  rotate: 40deg;
+@font-face {
+  font-family: 'Cowboys';
+  src: url('assets/fonts/Cowboys20/Cowboys20.woff2') format('woff2'),
+      url('assets/fonts/Cowboys20/Cowboys20.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 .navbar .navlink.active{
