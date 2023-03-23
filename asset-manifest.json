@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d2e973e1.css",
+    "main.js": "/static/js/main.396a4248.js",
+    "static/js/787.850fabcc.chunk.js": "/static/js/787.850fabcc.chunk.js",
+    "static/media/bg-image.jpg": "/static/media/bg-image.d870cadf14feec2dbe69.jpg",
+    "static/media/Sheriff-Coin 1-min.png": "/static/media/Sheriff-Coin 1-min.ef8d60ce2126b4d34c4e.png",
+    "static/media/Duality-Regular.woff": "/static/media/Duality-Regular.7174c0e2113a9bcc24ae.woff",
+    "static/media/Duality-Regular.woff2": "/static/media/Duality-Regular.41508c492fd8b7ed8ef9.woff2",
+    "static/media/WideSaloon.woff": "/static/media/WideSaloon.42a071a2923f3be9bc03.woff",
+    "static/media/WideSaloon.woff2": "/static/media/WideSaloon.0a8155ac672f54b05227.woff2",
+    "static/media/Cowboys20.woff": "/static/media/Cowboys20.b0f632b294d7da83df0e.woff",
+    "static/media/Cowboys20.woff2": "/static/media/Cowboys20.a3b75881c4838c270391.woff2",
+    "index.html": "/index.html",
+    "main.d2e973e1.css.map": "/static/css/main.d2e973e1.css.map",
+    "main.396a4248.js.map": "/static/js/main.396a4248.js.map",
+    "787.850fabcc.chunk.js.map": "/static/js/787.850fabcc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2e973e1.css",
+    "static/js/main.396a4248.js"
+  ]
+}
