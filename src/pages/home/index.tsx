@@ -1,6 +1,7 @@
 
 import { Nav } from "../../Components/nav/nav";
 import coin from "../../assets/imgs/Sheriff-Coin 1-min.png";
+import bulletDown from "../../assets/imgs/bulet-down-min.png";
 import { Container } from "../../Components/container/container";
 const Home: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ const Home: React.FC = () => {
           <img src={coin} alt="" className="" />
         </div>
         <div className="flex flex-col md:items-start items-center  md:justify-center justify-start md:pt-0 pt-8">
-          <h2 className="mb-4 text-5xl font-sans text-primary md:text-left text-center">tokenomics</h2>
+          <h2 className="mb-4 text-5xl text-primary md:text-left text-center font-cowBoys">tokenomics</h2>
           <p className="text-xl m-0 leading-10 md:text-left text-center">
             50 BNB Private Raise <br />
             ️75% to Liquidity <br />
@@ -22,6 +23,9 @@ const Home: React.FC = () => {
             ️0.5 bnb max private wallet
           </p>
         </div>
+      </div>
+      <div className="bullet absolute sm:right-56 right-12 bottom-6 w-4">
+        <img src={bulletDown} className='' alt="" />
       </div>
     </Container>
   );
